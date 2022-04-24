@@ -1,0 +1,367 @@
+body { 
+	background-image: url("images/fond.jpg");
+	background-position: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+	font-family: Arial Black;
+	font-size: 1em;
+	color: #e05353;
+}
+
+
+
+
+
+/*HEADER*/
+#entête{
+	display : flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	margin-bottom: 10%;
+}
+
+a {
+	text-decoration:none; 
+	color: #e05353;
+	transition: 0.25s;
+}
+
+.titre {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	background-color: white;
+}
+
+.menu{
+	display: flex;
+	flex: 4;
+}
+
+.menu a{
+	display: flex;
+	flex:1;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #e05353;
+	text-align: center;
+	background-color: white;
+}
+
+.titre img:hover{
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+
+.menu a:hover{
+	background-color: transparent;
+}
+
+
+
+
+
+/*TEXTE*/
+.intro h2, .intro p, .intro .pouvoir{
+	border: 2px black ridge;
+	border-radius: 5px;
+	background: white;
+	padding: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+
+
+
+/*INDEX*/
+.generations {
+	margin-top: 10%;
+	color: white;
+}
+
+.generation {
+	display: flex;
+	border: solid 1px;
+	border-color: white;
+}
+
+.generation img{
+	width: 15%;
+	position: relative;
+	opacity: 0.33;
+}
+
+.generation h3 {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 210%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.generation ul {
+	display: flex;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	background-color: #3653e5;
+	font-size: 150%;
+}
+
+.generation a {
+	color: white;
+}
+
+.generation a:hover {
+	color: red;
+}
+
+
+
+/*HISTOIRE*/
+.intro img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+}
+
+em {
+	font-size: 0.75em;
+}
+
+.champignons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mots {
+	display:flex;
+	flex-wrap: wrap;
+	flex:3;
+	justify-content: center;
+}
+
+.image {
+	flex:1;
+}
+
+.image img {
+	width: 80%;
+}
+
+.objet{
+	margin: 0px 20px;
+}
+
+.objet img {
+	display: none;
+	background-color: white;
+	position: absolute;
+	width: 8%;
+	border: solid 2px;
+	border-color: #e05353;
+	border-radius: 20px;
+}
+
+.objet:hover {
+	border: solid 1px;
+	border-color: #e05353;
+}
+
+.objet:hover img {
+	display: block;
+}
+
+
+
+
+
+/*PERSONNAGES*/	
+.personnages {
+	display: flex;
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 8%;
+}
+
+.personnages .carte{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	border: solid 2px;
+	border-color: black;
+	background-color: white;
+	border-radius: 50px;
+	margin: 0% 5% 0% 5%;
+	transition: 0.5s;
+}
+
+.carte:hover{
+	transform: scale(1.1);
+}
+
+.carte img {
+	display: flex;
+	margin: auto;
+}
+
+h4 {
+	text-align:center;
+}
+
+
+
+
+
+/*AVIS*/
+.avis {
+	background-image: url("images/fondetoile.jpg");
+	border: 2px red ridge;
+	border-radius: 5px;
+	padding: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+	background-size: cover;
+}
+
+.etoile img{
+	width: 10%;
+}
+
+.etoile{
+	display: flex;
+	justify-content: space-between;
+}
+
+.texte {
+	display:flex;
+	margin-top: 5%;
+}
+
+.texte p {
+	font-family: arial;
+	margin: 0% 5% 5% 5%;
+	background-color: white;
+	color: black;
+	padding: 5%;
+	border: 2px white ridge;
+	border-radius: 10px;
+}
+
+.textarea {
+	text-align: center;
+}
+
+label{
+	color: white;
+	display: block;
+    margin-bottom: 2%;
+}
+textarea {
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+
+
+
+
+/*FOOTER*/
+hr {
+	color: white;
+	margin-top: 5%;
+}
+
+footer {
+	text-align: center;
+	color: white;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color:#e05353;
+}
+
+
+
+
+
+
+/*ADAPTATION*/
+@media (max-width: 500px) {
+	.generation h3{
+		font-size: 150%;
+	}
+	.personnages .carte {
+		margin: 0% 10%;
+	
+	}
+}
+
+@media (max-width: 700px) {
+	#entête {
+		display: block;
+	}
+	.menu{
+		display: block;
+	}
+	a {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.intro h2, .intro p{
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	.titre {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 760px) {
+	.generation ul{
+		font-size: 80%;
+	}
+}
+
+@media (max-width: 900px) {
+	.texte{
+		display: block;
+	}
+}
+
+@media (max-width: 1000px) {
+	.generation img {
+		display: none;
+	}
+	.image{
+		display: none;
+	}
+	.personnages{
+		display: block;
+	}
+	.objet img {
+		display: block;
+		position: relative;
+	}
+	.mots {
+		display: block;
+	}
+}
